@@ -105,7 +105,7 @@ function clearScreen(){
 
 function drawSnake(){
    
-    ctx.fillStyle = 'rgb(71, 117, 2)';
+    ctx.fillStyle = '#333';
     
     for(let i =0; i < snakeParts.length; i++){
         let part =  snakeParts[i];
@@ -117,7 +117,7 @@ function drawSnake(){
         snakeParts.shift();
     }
 
-    ctx.fillStyle = 'orange';
+    ctx.fillStyle = 'rgb(192, 189, 189)';
     ctx.fillRect(headX * tileCount, headY* tileCount, tileSize,tileSize);
 }
 
@@ -127,7 +127,7 @@ function changeSnakePosition(){
 }
 
 function drawApple(){
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "black";
     ctx.fillRect(appleX* tileCount, appleY* tileCount, tileSize, tileSize)
     ctx.lineWidth=4;//Border to show a small square red
     ctx.strokeStyle="#fff";
